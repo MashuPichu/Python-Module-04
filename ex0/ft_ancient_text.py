@@ -6,13 +6,13 @@
 #  By: klucchin <klucchin@student.42nice.fr>     +#+  +:+       +#+         #
 #                                              +#+#+#+#+#+   +#+            #
 #  Created: 2026/03/13 12:30:11 by klucchin        #+#    #+#               #
-#  Updated: 2026/03/13 13:12:17 by klucchin        ###   ########.fr        #
+#  Updated: 2026/03/13 13:23:51 by klucchin        ###   ########.fr        #
 #                                                                           #
 # ************************************************************************* #
 
 print("=== CYBER ARCHIVES - DATA RECOVERY SYSTEM ===\n")
 
-name = "ancient_fragment"
+name = "ancient_fragment.txt"
 try:
     file = open("ancient_fragment.txt")
     print(f"Accessing Storage Vault: {name}")
