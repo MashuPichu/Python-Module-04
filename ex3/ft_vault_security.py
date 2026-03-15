@@ -6,7 +6,7 @@
 #  By: klucchin <klucchin@student.42.fr>         +#+  +:+       +#+         #
 #                                              +#+#+#+#+#+   +#+            #
 #  Created: 2026/03/15 15:46:02 by klucchin        #+#    #+#               #
-#  Updated: 2026/03/15 16:03:43 by klucchin        ###   ########.fr        #
+#  Updated: 2026/03/15 16:06:40 by klucchin        ###   ########.fr        #
 #                                                                           #
 # ************************************************************************* #
 
@@ -28,7 +28,7 @@ try:
         print("[CLASSIFIED] New security protocols archived")
 
     print("Vault automatically sealed upon completion\n")
-except FileNotFoundError:
-    print("Error: Vault source not found")
+except (FileNotFoundError, PermissionError):
+    print("Error: Vault source not found/Permission denied")
 finally:
     print("All vault operations completed with maximum security.")
